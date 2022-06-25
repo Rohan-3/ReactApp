@@ -2,11 +2,10 @@ import {React} from 'react'
 import './ExpensesFilter.css'
 
 function ExpensesFilter(props) {
-  const {SelectedYear} = props 
-
+  const {SelectedYear,onSaveFilterYear} = props 
 
   const OnChangeYearHandler = (event)=>{
-    props.onSaveFilterYear(event.target.value)
+    onSaveFilterYear(event.target.value)
   }
 
   
