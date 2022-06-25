@@ -1,5 +1,7 @@
 import './App.css';
 import Expenses from './Components/Expenses';
+import NewExpense from './Components/NewExpense/NewExpense';
+
 
 function App() {
 
@@ -26,9 +28,17 @@ function App() {
       }
     ]
 
+    const onAddExpenseHandler = expense =>{
+      console.log("yes or no");
+      console.log(expense);
+    }
+
+    
   return (
     <div className="App">
      <h1>Welcome Boi</h1>
+     
+     <NewExpense onAddExpense={onAddExpenseHandler}/>
      <Expenses items ={expenses}/>
     </div>
   );
