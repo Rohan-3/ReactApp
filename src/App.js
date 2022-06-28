@@ -7,7 +7,7 @@ const INITAIL_DATA = [
   { id: "e1",
    title: "Cars insurance",
    amount: "1000/-",
-   date: new Date(2022, 5, 23)
+   date: new Date(2021, 5, 23)
   },
   { id: "e2",
    title: "Home insurance",
